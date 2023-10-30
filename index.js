@@ -58,7 +58,6 @@ async function createNotionPage() {
         }
       }
     });
-    console.log("-------------------------------");
     console.log("---- Notion Response ----");
     console.log(response);
   }
