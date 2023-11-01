@@ -92,9 +92,6 @@ const getPullRequests = async () => {
       'X-GitHub-Api-Version': '2022-11-28'
     }
   })
-  // console.log("------------------------------------");
-  // console.log(prs);
-  // console.log("------------------------------------");
   // console.log(prs.data[0]);
   const prInfo = prs.data[0];
   const prData = {
