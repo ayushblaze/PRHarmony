@@ -123,22 +123,22 @@ const getPullRequests = async () => {
   // console.log(prs.data.length);
   // console.log("----------------------");
 
-  // allPrs = prs.data;
-  // console.log("inside", allPrs);
-  // const prInfo = prs.data[0];
-  // const prData = {
-  //   "url": prInfo.url,
-  //   "number": prInfo.number,
-  //   "state": prInfo.state,
-  //   "title": prInfo.title,
-  //   "author": prInfo.user.login,
-  //   "body": prInfo.body,
-  //   "createdAt": prInfo.created_at,
-  //   "updateAt": prInfo.updated_at,
-  //   "closedAt": prInfo.closed_at,
-  //   "merged_at": prInfo.merged_at,
-  //   "reviewers": prInfo.requested_reviewers,
-  // };
+  allPrs = prs.data;
+  console.log("inside", allPrs);
+  const prInfo = prs.data[0];
+  const prData = {
+    "url": prInfo.url,
+    "number": prInfo.number,
+    "state": prInfo.state,
+    "title": prInfo.title,
+    "author": prInfo.user.login,
+    "body": prInfo.body,
+    "createdAt": prInfo.created_at,
+    "updateAt": prInfo.updated_at,
+    "closedAt": prInfo.closed_at,
+    "merged_at": prInfo.merged_at,
+    "reviewers": prInfo.requested_reviewers,
+  };
 
   // const reviewers = await octokit.request('GET /repos/FieldAssist/fa_nestjs_dms_reporting_service/pulls/242/reviews', {
   //   owner: 'FieldAssist',
